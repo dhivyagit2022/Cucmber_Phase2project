@@ -1,74 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/Products.feature");
-formatter.feature({
-  "name": "This feature would be used to validate the Product prices",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "Open the Swag Labs application",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User is on SauceDemo login page",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User enters Username \"standard_user\" and Password \"secret_sauce\"",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User clicks on Login button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "name": "To validate the Product Prices",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "User is on Products Page",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User compare the following products price",
-  "rows": [
-    {
-      "cells": [
-        "Sauce Labs Backpack",
-        "$29.99"
-      ]
-    },
-    {
-      "cells": [
-        "Sauce Labs Bike Light",
-        "$9.99"
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.uri("file:src/test/java/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/login.feature");
 formatter.feature({
   "name": "This feature would be used to design the Login page of the application",
   "description": "",
@@ -77,7 +7,12 @@ formatter.feature({
 formatter.scenarioOutline({
   "name": "To validate the positive login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"\u003cusername\u003e\" and Password \"\u003cpassword\u003e\"",
@@ -132,7 +67,12 @@ formatter.result({
 formatter.scenario({
   "name": "To validate the positive login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"standard_user\" and Password \"secret_sauce\"",
@@ -174,7 +114,12 @@ formatter.result({
 formatter.scenario({
   "name": "To validate the positive login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"problem_user\" and Password \"secret_sauce\"",
@@ -203,7 +148,12 @@ formatter.result({
 formatter.scenarioOutline({
   "name": "To validate the negative login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"\u003cusername\u003e\" and Password \"\u003cpassword\u003e\"",
@@ -258,7 +208,12 @@ formatter.result({
 formatter.scenario({
   "name": "To validate the negative login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"apple\" and Password \"secret_sauce\"",
@@ -300,7 +255,12 @@ formatter.result({
 formatter.scenario({
   "name": "To validate the negative login",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User enters Username \"random_user\" and Password \"secret_sauce\"",

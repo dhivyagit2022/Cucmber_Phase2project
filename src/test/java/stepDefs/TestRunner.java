@@ -9,6 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		plugin={"html:target/cucumber.html","json:target/cucumber.json"},
 		features="src/test/java/features",	
+		//tags = {"@Sanity"},    
+		tags = {"@Sanity or @Regression"},
 				glue= {"stepDefinition"}
 				)
 
